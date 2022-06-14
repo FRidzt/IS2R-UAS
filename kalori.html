@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator Kalori</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="kalori.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+    <ul>
+      <li><a href="logout.php">Logout</a> </li>
+      <li><a href = "home.php" > Home </a> </li>
+        <li class = "dropdown">
+          <a href = "#" class = "dropbutton"> Feature </a>
+          <div class = "dropdownList">
+            <a href= "bmi.html" > BMI </a>
+            <a href= "kalori.html" > Kalori </a>
+            <a href= "jantung.html" > Denyut Jantung Istirahat </a>
+            <a href= "tpg.html" > Tinggi Potensi Genetik </a>
+          </div>
+        </li>
+    </ul>
+
+
+     <div class = "introduction">
+       <h1> Kalkulator Kalori </h1>
+     </div>
+
+    <img src="kalori.png" alt="Nature" class="responsive">
+
+    <div class = "calculator">
+    <br/>
+    <br/>
+    <p> Jenis Kelamin </p>
+    
+    <select id = "selectKelamin">
+      <option value = "L">Laki-laki</option>
+      <option value = "P">Perempuan</option>
+    </select>
+    <br/>
+    <br/>
+    <p> Silahkan Masukkan Nilai Data Diri</p>
+    <br/>
+    
+    <p>Berapa usia Anda? (tahun) </p>
+    <form name="tform">
+      <tr>
+        <td>
+          <pre>
+            <input type="number" size="11" name="usia">
+          </pre>
+        </td>
+      </tr>
+      <br/>
+      
+
+    <p>Berapa tinggi Anda? (cm) </p>
+      <tr>
+        <td>
+          <pre>
+            <input type="number" size="11" name="tinggi">
+          </pre>
+        </td>
+      </tr>
+      <br/>
+      
+
+    <p>Berapa berat Anda? (kg) </p>
+      <tr>
+        <td>
+          <pre>
+            <input type="number" size="11" name="berat">
+          </pre>
+        </td>
+      </tr>
+      <br/>
+      
+      <tr>
+        <td>
+          <button type="button" onclick="hitungKalori()"><b>Hitung</b></button>
+          <button type="reset" value="ulang"><b>Ulang</b></button>
+        </td>
+      </tr>
+      <br/>
+      <br/>
+      
+      Kebutuhan Kalori Anda Adalah: <div id="result"></div>
+
+      
+    </form>
+    </div>
+  </body>
+</html>

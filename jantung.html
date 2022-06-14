@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kalkulator Denyut Jantung Istirahat</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   <ul>
+    <li><a href="logout.php">Logout</a> </li>
+    <li><a href = "home.php" > Home </a> </li>
+        <li class = "dropdown">
+          <a href = "#" class = "dropbutton"> Feature </a>
+          <div class = "dropdownList">
+            <a href= "bmi.html" > BMI </a>
+            <a href= "kalori.html" > Kalori </a>
+            <a href= "jantung.html" > Denyut Jantung Istirahat </a>
+            <a href= "tpg.html" > Tinggi Potensi Genetik </a>
+          </div>
+        </li>
+    </ul>
+  
+
+  
+   <div class = "introduction">
+    <h1>Denyut Jantung Istirahat</h1>
+   </div>
+
+   <img src="jantung.png" alt="Heartbeat" class="responsive">
+  
+  <script src="jantung.js"></script>
+  <div class ="calculator">
+  <br>
+  <br>
+  Jenis Kelamin
+  <select id = "select_kelamin">
+    <option value ="L">Laki-laki</option>
+    <option value ="W">Wanita</option>
+  </select> 
+  <br>
+ </br> Mengecek untuk <br>
+  </br>
+  <select id="select_cek">
+    <option value = "Ds">Diri sendiri</option>
+    <option value = "Ol">Orang lain</option>
+  </select>
+ <br></br>
+  <p> Silahkan masukan nilai data diri</p> </br>
+  Berapa usia Anda? (tahun)
+  <form name="tform">
+    <tr>
+      <td>
+        <pre>
+      <input type="number" size="11" name="usia">
+    </pre>
+      </td>
+    </tr>
+    
+    <tr align="center">
+      Detak jantung istirahat Anda (bpm/denyut per menit)
+    </tr>
+      
+    <tr>
+      <td>
+        <pre>
+      <input type="number" size="11" name="denyut">
+    </pre>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+      <button type="button" onclick="hitungdetak()"><b>Hitung</b></button>
+      <button type="reset" value="Ulang"><b>Ulang</b></button>
+        </td>
+    </tr> <br> <br/>
+    
+    <tr>
+      <tb>
+        <td colspan="4" width="50%" align="center"> Detak Jantung Istirahat Anda : <output type= "text"<size="20" name="hsl">
+      </tb>
+    </tr>
+    
+      </form> 
+  </div>
+</body>
+      
+</html>

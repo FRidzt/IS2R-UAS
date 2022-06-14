@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  background-image: url(background.jpg);
+  background-size: cover;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+  height: 59px;
+  background-color: #005F99;
+  align-items: center;
+  margin: auto;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+li {
+  float: right;
+}
+
+li a, .dropbutton {
+  text-decoration: none;
+  font-size: calc(14px + 1vmin);
+  display: inline-block;
+  color: #DDDDDD;
+  text-align: center;
+  padding: 17px 38px;
+}
+
+li a:hover, .dropdown:hover .dropbutton {
+  background-color: #F7F5F2;
+  border:2px solid;
+  border-radius: 3px;
+  color: #325288;
+}
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdownList {
+  display: none;
+  position: absolute;
+  background-color: #1b1b1b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdownList a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+  font-size: calc(10px + 1vmin);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.dropdownList a:hover {
+  background-color: #F2EDD7;
+  border-radius: 3px;
+  color: #5F939A;
+}
+
+.dropdown:hover .dropdownList {
+  display: block;
+}
+
+.introduction{
+  margin-left: 15%;
+  margin-top: 3%;
+  animation: Animation 0.75s;
+  line-height: 50px;
+}
+
+.introduction h1{
+  font-size: calc(60px + 1vmin);
+  font-weight: 100;
+  color: #111;
+}
+
+.introduction p{
+  font-size: calc(20px + 1vmin);
+  font-weight: 50;
+  color: #111;
+}
+
+.calculator {
+  margin-left: 15%;
+  margin-top: 1%;
+  font-size: calc(15px + 1vmin);
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  height: 0;
+  max-width: 75%;
+  margin-top: 6%;
+  margin-left: 15%;
+}
+
+.video iframe, .video object, .video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+}
+
+@keyframes Animation{
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0deg);
+  }
+}
+
+input[type=number]{
+  border:2px solid;
+  outline: none;
+  padding: 1px;
+  transition: .3s;
+}
+
+input[type=number]:focus{
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+select{
+  border:2px solid;
+}
+
+button{
+  border:2px solid;
+  padding: 3px;
+}
+
+button:active {
+  background-color: #d3d3d3;
+  transform: translateY(3px);
+}
+
+
+.perkenalan {
+ color: whitesmoke;
+ text-align: left;
+ line-height: 50px;
+ font-family: 'Poppins',sans-serif;
+ font-size: calc(20px + 1vmin);
+ }
+
+.responsive {
+  max-width: 28%;
+  height: auto;
+  float: right;
+  position: relative;
+  display:block;
+  margin-right: 18%;
+  margin-top: 8%;
+  z-index:-1;
+}
+
+.responsive img{
+  width:100% !important;
+  height: auto;
+  display:block;
+}

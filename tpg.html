@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kalkulator Tinggi Potensi Genetik</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   <ul>
+    <li><a href="logout.php">Logout</a> </li>
+     <li><a href = "home.php" > Home</a> </li>
+     <li class = "dropdown">
+       <a href = "#" class = "dropbutton"> Feature </a>
+          <div class = "dropdownList">
+            <a href= "bmi.html" > BMI </a>
+            <a href= "kalori.html" > Kalori </a>
+            <a href= "jantung.html" > Denyut Jantung Istirahat </a>
+            <a href= "tpg.html" > Tinggi Potensi Genetik </a>
+          </div>
+        </li>
+    </ul>
+   <div class = "introduction">
+    <h1>Tinggi Potensi Genetik</h1>
+  </div>
+   <img src="tpg.png" alt="tpg" class="responsive">
+  <br></br>
+  <div class ="calculator">
+  <p>Jenis Kelamin : </p>
+    <script src="tpg.js"></script>
+    <select id="select_kelamin">
+        <option value="l">Laki-laki</option>
+        <option value="p">Perempuan</option>
+      </select>
+      <tr>
+        <td width="100%" colspan="2">
+          <p>Silahkan masukkan data diri</p>
+        </td>
+      </tr> </br>
+      <form name="tform">
+        <tr>
+          <td>
+              Tinggi Ibu:
+            <br>
+            <input type="number" size="11" name="tm">
+            <br>
+              Tinggi Ayah:
+            <br>
+            <input type="number" size="11" name="tp">
+            
+          </td>
+        </tr> 
+      </br> 
+        <tr align="left">
+          <td>
+            <button type="button" onclick="hitungtpg()"><b>Hitung</b></button>
+            <button type="reset" value="ulang"><b>Ulang</b></button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" width="50%" align="left"> <br>
+            Minimum : <div id ="mini" class = "display">
+            </div>
+            Maximum : <br> <div id ="maxi" class = "display">
+            </div>
+        </tr>
+
+      </form>
+    </table>
+  </div>
+</body>
+</html>

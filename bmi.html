@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Kalkulator BMI</title>
+</head>
+  
+  <body>
+    <ul>
+      <li><a href="logout.php">Logout</a> </li>
+      <li><a href = "home.php" > Home </a> </li>
+        <li class = "dropdown">
+          <a href = "#" class = "dropbutton"> Feature </a>
+          <div class = "dropdownList">
+            <a href= "bmi.html" > BMI </a>
+            <a href= "kalori.html" > Kalori </a>
+            <a href= "jantung.html" > Denyut Jantung Istirahat </a>
+            <a href= "tpg.html" > Tinggi Potensi Genetik </a>
+          </div>
+        </li>
+    </ul>
+
+
+     <div class = "introduction">
+       <h1> Kalkulator BMI </h1>
+     </div>
+       
+<img src="bmi.png" alt="bmi" class="responsive">
+       
+    <div class = "calculator">
+    <br/>
+      
+<div id="result" >Silahkan masukkan nilai data diri</div> </br>
+
+  <form>
+
+    <div id="bbInput">
+          <p>Berapa berat badan anda? (KG)</p>
+    		     	<input id="bb" type="number"/>
+    	</div> </br>
+    
+      <div id="tbInput">
+    			<p>Berapa tinggi badan anda? (CM)</p>
+	    				<input id="tb" type="number"/> 
+    	</div> </br>
+    		
+      <button type="button" onclick="hitung()"><b>Hitung</b>
+      </button>
+      <button type="reset" value="ulang"><b>Ulang</b></button>
+  </form>
+
+    </div>  
+    </div>
+    <script src="bmi.js"></script>
+
+</body>
+</html>
